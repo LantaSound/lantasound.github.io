@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mta7yjq.css">
+
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+
+
+
+
 </head>
 <body>
-    index babey!
+    <div class="header">
+        <div class="lanta">LANTASOUND.ME</div>
+        <span class="dot"></span>
+    </div>
+    <div class="container" onclick="myFunction(this)">
+
+        <button class="accordion"></button>
+        <div class="panel">
+        <p>Lorem ipsum...</p>
+        </div>
+
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+
+
+      </div>
+
+
+
+
 </body>
 </html>
