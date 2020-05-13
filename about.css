@@ -1,0 +1,323 @@
+body {
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* helper class to hide elements */
+  .none {
+    display: none;
+  }
+  
+  .header {
+    background-color: rgb(238, 230, 214);
+    width: 100vw;
+    height: 30px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 3;
+  }
+  
+  .lanta {
+    font-family: bely-display, sans-serif;
+    color: rgb(107, 107, 107);
+    margin-left: 200px;
+    margin-top: 6px;
+    z-index: 4;
+  }
+  
+  .dot {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 72, 0);
+    border-radius: 70%;
+    display: inline-block;
+    top: 4px;
+    left: 360px;
+    position: absolute;
+    z-index: 4;
+  }
+  
+  .container {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+  }
+  
+  .hamburger {
+    position: relative;
+    z-index: 100;
+    width: 35px;
+    z-index: 4;
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(58, 58, 58);
+    transition: transform 0.3s ease-in-out;
+    margin: 4px 0;
+    pointer-events: none;
+    z-index: 4;
+    position: relative;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    z-index: 4;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 10;
+    transform: scale(.1);
+    z-index: 4;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    z-index: 4;
+  }
+  
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: rgb(39, 39, 39);
+    color: #444;
+    cursor: pointer;
+    padding: 0px;
+    width: 35px;
+    height: 30px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+  }
+  
+  /* 
+  .panel {
+    padding: 18px;
+    background-color: rgb(255, 0, 0);
+    display: block;
+    overflow: hidden;
+    height: 500px;
+    width: 100px;
+  } */
+  
+  .panel {
+    height: 500px;
+    width: 150px;
+    /* display: none; */
+    padding: 0px;
+    background-color: rgb(32, 32, 32);
+    max-height: 370px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-right:solid #E08A00 10px;
+    z-index: 4;
+  }
+  
+  .heightZero {
+    max-height: 0;
+  }
+
+  .block {
+    height: 50px;
+    width: 100px;
+
+    margin: 40px;
+  }
+
+
+
+
+a{
+    color: cornsilk;
+    font-family: nobel, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(182, 182, 182);
+    font-family: nobel, sans-serif;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.greet{
+    width: 100vw;
+    height: 600px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(8, 4, 58));
+}
+
+/*desktop*/
+@media screen and (min-width: 1025px) {
+
+  .welcome{
+    font-family: bely-display, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    margin-top: 130px;
+    font-size: 6em;
+    max-height: 10px;
+    position: absolute;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    
+  }
+
+
+
+  .start{
+    font-family: all-round-gothic, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    top: 240px;
+    font-size: 2em;
+    position: absolute;
+    margin-right: 20vw;
+  }
+}
+
+
+/* ipad */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+  .start{
+    font-family: all-round-gothic, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    top: 240px;
+    font-size: 1.8em;
+    position: absolute;
+    margin-right: 15vw;
+  }
+
+  .welcome{
+      font-family: bely-display, sans-serif;
+      color: rgb(255, 255, 255);
+      margin-left: 200px;
+      margin-top: 130px;
+      font-size: 5em;
+      max-height: 10px;
+      position: absolute;
+      background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  }
+}
+
+/* iphone */
+@media screen and (max-width: 767px) {
+
+  .start{
+    font-family: all-round-gothic, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    top: 240px;
+    font-size: 1.4em;
+    position: absolute;
+    margin-right: 10vw;
+  }
+
+  .welcome{
+      font-family: bely-display, sans-serif;
+      color: rgb(255, 255, 255);
+      margin-left: 200px;
+      margin-top: 130px;
+      font-size: 2.5em;
+      max-height: 10px;
+      position: absolute;
+      background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  }
+}
+
+
+.yellow{
+    width: 100vw;
+    height: 10px;
+    background-color: #E08A00;
+}
+
+.green{
+    width: 100vw;
+    height: 10px;
+    background-color: rgb(163, 62, 87);
+}
+
+.dark{
+    width: 100vw;
+    height: 10px;
+    background-color: rgb(82, 45, 59);
+}
+
+.load {
+  height: 80px;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, rgb(32, 32, 32), rgb(22, 22, 22));
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10vw;
+}
+
+.bread {
+  height: 20px;
+  width: 10vw;
+  grid-area: 1fr;
+  margin-left: 10vw;
+  margin-top: 30px;
+}
+.read {
+  height: 20px;
+  width: 10vw;
+  grid-area: 1fr;
+  margin-left: 5vw;
+  margin-top: 30px;
+}
+.ead {
+  height: 20px;
+  width: 10vw;
+  grid-area: 1fr;
+  margin-top: 30px;
+}
+.ad {
+  height: 20px;
+  width: 10vw;
+  grid-area: 1fr;
+  margin-top: 30px;
+}
+
+.gif{
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+}
