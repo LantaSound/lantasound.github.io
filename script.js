@@ -8,3 +8,4 @@ accordion.addEventListener("click", function(element) {
   let panel = document.getElementById("panel");
   panel.classList.toggle("heightZero");
 });
+
