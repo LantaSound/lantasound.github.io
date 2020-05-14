@@ -329,6 +329,7 @@ a:hover{
   margin-top: 100px;
   margin-left: 15vw;
   border: cornsilk solid 10px;
+  box-shadow: 5px 10px 20px;
 }
 
 .d2{
@@ -338,6 +339,7 @@ a:hover{
   margin-top: 100px;
   margin-left: 15vw;
   border: cornsilk solid 10px;
+  box-shadow: 5px 10px 20px;
 }
 
 .d3{
@@ -347,6 +349,7 @@ a:hover{
   margin-top: 100px;
   margin-left: 20vw;
   border: cornsilk solid 10px;
+  box-shadow: 5px 10px 20px;
 }
 
 .d4{
@@ -356,6 +359,7 @@ a:hover{
   margin-top: 100px;
   margin-left: 20vw;
   border: cornsilk solid 10px;
+  box-shadow: 5px 10px 20px;
 }
 
 .d5{
@@ -366,6 +370,7 @@ a:hover{
   margin-left: 15vw;
   border: cornsilk solid 10px;
   transform: rotate(90deg);
+  box-shadow: 5px 10px 20px;
 }
 
 
